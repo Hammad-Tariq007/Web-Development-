@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Web Development Project</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6E45E2, #88D3CE);
+            overflow: hidden;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 40px;
+            padding: 60px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            max-width: 450px;
+            animation: fadeIn 1.5s ease-out forwards;
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 3.5rem;
+            color: white;
+            letter-spacing: 2px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #FF512F, #DD2476);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            margin-top: 30px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, #24C6DC, #514A9D);
+            border: none;
+            border-radius: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, #FF512F, #DD2476);
+        }
+        .btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1>Web Development Project</h1>
+        <a href='http://fitme123.42web.io/' class='btn'>Visit Now</a>
+    </div>
+</body>
+</html>
